@@ -25,7 +25,11 @@ public class CreekRiverDbContext : DbContext
         });
         modelBuilder.Entity<Campsite>().HasData(new Campsite[]
     {
-    new Campsite {Id = 1, CampsiteTypeId = 1, Nickname = "Barred Owl", ImageUrl="https://tnstateparks.com/assets/images/content-images/campgrounds/249/colsp-area2-site73.jpg"},
-    });
+    new Campsite { Id = 1, CampsiteTypeId = 1, Nickname = "Barred Owl", ImageUrl = "https://tnstateparks.com/assets/images/content-images/campgrounds/249/colsp-area2-site73.jpg" },
+new Campsite { Id = 2, CampsiteTypeId = 1, Nickname = "Red Fox", ImageUrl = "https://example.com/redfox-campsite.jpg" },
+new Campsite { Id = 3, CampsiteTypeId = 2, Nickname = "Sunset View", ImageUrl = "https://example.com/sunsetview-campsite.jpg" },
+new Campsite { Id = 4, CampsiteTypeId = 2, Nickname = "River's Edge", ImageUrl = "https://example.com/riversedge-campsite.jpg" },
+new Campsite { Id = 5, CampsiteTypeId = 3, Nickname = "Mountain Haven", ImageUrl = "https://example.com/mountainhaven-campsite.jpg" },
+new Campsite { Id = 6, CampsiteTypeId = 4, Nickname = "Forest Retreat", ImageUrl = "https://example.com/forestretreat-campsite.jpg" }});
 }
-}
+};
